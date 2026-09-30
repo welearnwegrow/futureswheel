@@ -64,10 +64,10 @@ README.md               this file
 
 ## Credits and licence
 
-- The futures wheel method was created by Jerome Glenn in 1971.
+- The futures wheel method was created by Jerome Glenn in 1971. For an introduction, see [Futures Thinking Now: Futures Wheels](https://knowledgeworks.org/resources/futures-thinking-now-futures-wheels/) by KnowledgeWorks.
 - Adapted from [Futurescape](https://futurescape.futurity.science/) for educational use.
 - Consequences and reports are drafted by [Claude](https://www.anthropic.com/claude), made by Anthropic.
 - Illustration generated with Midjourney.
 - Made by [We Learn, We Grow](https://welearnwegrow.bio).
 
-2026 We Learn, We Grow. Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). You may share this work with credit, for non-commercial purposes, without changes.
+Licensed [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). · 2026 We Learn, We Grow. You may share this work with credit, for non-commercial purposes, without changes.
