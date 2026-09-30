@@ -1,0 +1,28 @@
+{
+  "name": "Futures Wheel",
+  "short_name": "Futures Wheel",
+  "description": "A free tool to map the first, second and third-order consequences of any trend, grounded in the place where you are noticing it.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F5F4EE",
+  "theme_color": "#F5F4EE",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
