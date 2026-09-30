@@ -70,4 +70,4 @@ README.md               this file
 - Illustration generated with Midjourney.
 - Made by [We Learn, We Grow](https://welearnwegrow.bio).
 
-© 2026 We Learn, We Grow. Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). You may share this work with credit, for non-commercial purposes, without changes.
+2026 We Learn, We Grow. Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). You may share this work with credit, for non-commercial purposes, without changes.
