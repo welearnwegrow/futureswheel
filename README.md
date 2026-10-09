@@ -12,16 +12,20 @@ Futures Wheel is a free thinking tool for people working on change: educators, c
 
 You type in a trend and where you are noticing it. The tool draws a wheel of what that trend could lead to, and what those things lead to in turn. Each consequence is coloured by the part of life it touches, using STEEPLE: Social, Technological, Economic, Environmental, Political, Legal and Ethical. Green boxes are broadly positive, red boxes broadly negative.
 
-It is meant to start a conversation, not to give answers. Claude suggests the consequences. You decide which ones matter.
+Once the map is drawn, the tool writes a short report: a futures cone of where things could go, and the "so what" of the trend, written as shifts from how things work now to where we would want them to go.
+
+It is meant to start a conversation, not to give answers. Claude suggests the consequences and drafts the report. You decide what matters.
 
 ## How to use it
 
 1. **Name the trend.** One line is enough, for example "AI tutors replace teachers".
 2. **Say where you are noticing it.** For example "government schools in rural Karnataka". The map is drawn for that place and the people in it.
-3. **Press Map consequences.** The first ring shows the direct effects.
-4. **Click a first-ring consequence** to see what it leads to, up to three rings out. Hover over any box to read why it happens. Scroll or pinch to zoom, and drag to move around.
-5. **Press Generate report.** You will be asked for your name and email the first time. The report gives key insights over the short term (0–10 years), medium term (10–25 years) and long term (25+ years), and the themes that come up, with possibilities for intervention and risks to watch.
-6. **Download the report as a PDF.** It opens in a new tab, ready to save.
+3. **Add your name and email**, then press **Map consequences**. Your browser remembers them for next time. The first ring shows the direct effects.
+4. **Explore the wheel.** Click a consequence to see what it leads to, up to three rings out. Hover over a box to read why it happens (on a touchscreen, tap once to read and tap again to open the next ring). Scroll or pinch to zoom, and drag to move around.
+5. **Read the report.** It is written as soon as the first ring is drawn:
+   - **Futures cone:** what the map suggests, sorted into Probable (where things are heading if nothing changes), Plausible, Wild cards (unlikely, high-impact surprises) and Preferable (a just and regenerative future for the Global South and the global majority). Each item has a time range: 0–10, 10–25 or 25+ years.
+   - **So what:** 4 to 5 implications. Each names a shift *from* how things work now *to* where we would want them to go, what that shift asks of us, and what to watch for.
+6. **Save the report as a PDF.** It opens in a new tab, ready to save, named after the trend and dated.
 
 ## How it works
 
@@ -33,7 +37,7 @@ The site is two static pages hosted on GitHub Pages:
 Behind them, a small **Cloudflare Worker** does three jobs, so that no secret keys ever sit in the page:
 
 - **`/`**: passes prompts to **Claude** (Anthropic's API) and returns the text that draws the map and writes the report.
-- **`/lead`**: saves name, email, trend, place and date to a private **Notion** database when someone generates a report.
+- **`/lead`**: saves name, email, trend, place and date to a private **Notion** database each time someone maps a trend.
 - **`/contact`**: saves deletion requests from the privacy page to the same Notion database, marked `DELETE EMAIL`.
 
 The Worker only accepts requests from `https://welearnwegrow.github.io`. The Anthropic API key and the Notion token are stored as Cloudflare secrets.
@@ -51,12 +55,16 @@ icons/icon-192.png      Android home-screen icon
 icons/icon-512.png      Android splash and install icon
 icons/icon-maskable-512.png  Android adaptive icon
 icons/og-image.png      social share image (1200×630)
+robots.txt              search engine instructions
+sitemap.xml             page list for Google Search Console
+.nojekyll               tells GitHub Pages to serve files as they are
+worker.js               Cloudflare Worker code (no secrets)
 README.md               this file
 ```
 
 ## Privacy summary
 
-- We collect **name and email** only when you generate a report, stored with the trend you mapped, the place you noticed it and the date.
+- We collect **name and email** when you map a trend, stored with the trend, the place you noticed it and the date.
 - Claude receives the trend and the place, **not** your name or email.
 - Your browser remembers your name and email so you do not have to type them again.
 - We do not sell your details, show ads, or use tracking cookies.
